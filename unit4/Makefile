@@ -13,7 +13,7 @@ else
 	DEBFLAGS = -O2
 endif
 
-CFLAGS += $(DEBFLAGS)
+EXTRA_CFLAGS += $(DEBFLAGS)
 
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
